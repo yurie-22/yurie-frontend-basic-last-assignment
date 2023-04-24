@@ -1,0 +1,8 @@
+@use "../../variables" as *;
+
+.message {
+  color: $black;
+  width: 287px;
+  height: 54px;
+  font-size: $fontsize-xl;
+}

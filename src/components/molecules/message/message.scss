@@ -1,8 +1,39 @@
 @use "../../variables" as *;
 
 .message {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: center;
   color: $black;
-  width: 287px;
-  height: 54px;
-  font-size: $fontsize-xl;
+}
+@media screen and (min-width: $breakpoint-lg) {
+  .title {
+    font-size: $fontsize-xl;
+    font-family: $fontfamily-mincho;
+  }
+  .text {
+    font-size: $fontsize-s;
+    font-family: $fontfamily-gothic;
+  }
+}
+@media screen and (max-width: $breakpoint-lg) {
+  .title {
+    font-size: $fontsize-l;
+    font-family: $fontfamily-mincho;
+  }
+  .text {
+    font-size: $fontsize-s;
+    font-family: $fontfamily-gothic;
+  }
+}
+@media screen and (max-width: $breakpoint-md) {
+  .title {
+    font-size: $fontsize-l;
+    font-family: $fontfamily-mincho;
+  }
+  .text {
+    font-size: $fontsize-s;
+    font-family: $fontfamily-gothic;
+  }
 }

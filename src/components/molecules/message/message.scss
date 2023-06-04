@@ -3,37 +3,37 @@
 .message {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
   text-align: center;
-  color: $black;
-}
-@media screen and (min-width: $breakpoint-lg) {
+  padding: 52px 20px;
+  @media screen and (max-width: $breakpoint-md) {
+    padding: 32px 20px;
+  }
+
   .title {
     font-size: $fontsize-xl;
     font-family: $fontfamily-mincho;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 54px;
+    margin-bottom: 10px;
+    @media screen and (max-width: $breakpoint-md) {
+      .title {
+        font-size: $fontsize-xl;
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 6px;
+      }
+    }
   }
   .text {
     font-size: $fontsize-s;
-    font-family: $fontfamily-gothic;
-  }
-}
-@media screen and (max-width: $breakpoint-lg) {
-  .title {
-    font-size: $fontsize-xl;
-    font-family: $fontfamily-mincho;
-  }
-  .text {
-    font-size: $fontsize-s;
-    font-family: $fontfamily-gothic;
-  }
-}
-@media screen and (max-width: $breakpoint-md) {
-  .title {
-    font-size: $fontsize-l;
-    font-family: $fontfamily-mincho;
-  }
-  .text {
-    font-size: $fontsize-s;
-    font-family: $fontfamily-gothic;
+    line-height: 36px;
+    margin: 0px;
+    @media screen and (max-width: $breakpoint-md) {
+      .text {
+        font-size: $fontsize-s;
+        line-height: 28px;
+      }
+    }
   }
 }

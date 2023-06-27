@@ -1,6 +1,20 @@
 @use "../../variables" as *;
 
 .card {
-  width: 272px;
-  height: 654.88px;
+  .triangle {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    border-bottom: 150px solid transparent;
+    border-left: 150px solid $white;
+  }
+  .card-title {
+    position: absolute;
+    margin: 0 6px;
+    z-index: 3;
+    top: 0;
+    left: 6px;
+    color: $orange_bistre;
+    font-size: $fontsize-l;
+  }
 }
